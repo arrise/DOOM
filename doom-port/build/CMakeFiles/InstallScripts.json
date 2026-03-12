@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Code/Doom/doom-port/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

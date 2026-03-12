@@ -57,25 +57,12 @@ Create a packet server based internet game.
 
 Create a client / server based internet game.
 
-Do a 3D accelerated version.  On modern hardware (fast pentium + 3DFX)
+Do a 3D accelerated version.  On modern hardware
 you probably wouldn't even need to be clever -- you could just draw the
 entire level and get reasonable speed.  With a touch of effort, it should
 easily lock at 60 fps (well, there are some issues with DOOM's 35 hz
 timebase...).  The biggest issues would probably be the non-power of two
 texture sizes and the walls composed of multiple textures.
 
-
-I don't have a real good guess at how many people are going to be
-playing with this, but if significant projects are undertaken, it would
-be cool to see a level of community cooperation.  I know that most early
-projects are going to be rough hacks done in isolation, but I would be
-very pleased to see a coordinated 'net release of an improved, backwards
-compatable version of DOOM on multiple platforms next year.
-
 Have fun.
 
-John Carmack
-12-23-97
-
-Copyright (c) ZeniMax Media Inc.
-Licensed under the GNU General Public License 2.0.

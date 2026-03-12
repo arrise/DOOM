@@ -1,0 +1,3 @@
+C:/Code/Doom/doom-port/build/CMakeFiles/doom-port.dir
+C:/Code/Doom/doom-port/build/CMakeFiles/ALL_BUILD.dir
+C:/Code/Doom/doom-port/build/CMakeFiles/ZERO_CHECK.dir
