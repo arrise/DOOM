@@ -1,7 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Code/Doom/doom-port/build/cmake_install.cmake"
+		"C:/Code/DOOM/doom-port/build/cmake_install.cmake",
+		"C:/Code/DOOM/doom-port/build/_deps/sdl2-build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

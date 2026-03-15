@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B9EA6C67-6007-3280-B982-B4D7B5F54ADB}</ProjectGuid>
+    <ProjectGuid>{A298BE0A-E3F2-3DE1-892A-3579AA26DFE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -52,6 +52,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -59,25 +60,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Code\Doom\doom-port\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Code\DOOM\doom-port\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">doom-port.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">doom-port</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Code\Doom\doom-port\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Code\DOOM\doom-port\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">doom-port.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">doom-port</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Code\Doom\doom-port\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Code\DOOM\doom-port\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">doom-port.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">doom-port</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Code\Doom\doom-port\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Code\DOOM\doom-port\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">doom-port.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">doom-port</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +87,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-debug\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -109,10 +110,15 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-debug\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-debug\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-debug\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,16 +126,16 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;_deps\sdl2-build\Debug\SDL2-staticd.lib;_deps\sdl2_mixer-build\Debug\SDL2_mixerd.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Code/Doom/doom-port/build/Debug/doom-port.lib</ImportLibrary>
+      <ImportLibrary>C:/Code/DOOM/doom-port/build/Debug/doom-port.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Code/Doom/doom-port/build/Debug/doom-port.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Code/DOOM/doom-port/build/Debug/doom-port.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -139,7 +145,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-release\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
@@ -163,10 +169,15 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-release\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-release\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-release\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,16 +185,16 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;_deps\sdl2-build\Release\SDL2-static.lib;_deps\sdl2_mixer-build\Release\SDL2_mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Code/Doom/doom-port/build/Release/doom-port.lib</ImportLibrary>
+      <ImportLibrary>C:/Code/DOOM/doom-port/build/Release/doom-port.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Code/Doom/doom-port/build/Release/doom-port.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Code/DOOM/doom-port/build/Release/doom-port.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -193,7 +204,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-minsizerel\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
@@ -217,10 +228,15 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-minsizerel\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-minsizerel\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-minsizerel\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -228,16 +244,16 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;_deps\sdl2-build\MinSizeRel\SDL2-static.lib;_deps\sdl2_mixer-build\MinSizeRel\SDL2_mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Code/Doom/doom-port/build/MinSizeRel/doom-port.lib</ImportLibrary>
+      <ImportLibrary>C:/Code/DOOM/doom-port/build/MinSizeRel/doom-port.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Code/Doom/doom-port/build/MinSizeRel/doom-port.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Code/DOOM/doom-port/build/MinSizeRel/doom-port.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -247,7 +263,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-relwithdebinfo\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -270,10 +286,15 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-relwithdebinfo\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_POSIX_;NORMALUNIX;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-relwithdebinfo\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Code\Doom\doom-port\src;C:\Code\Doom\doom-port\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Code\DOOM\doom-port\src;C:\Code\DOOM\doom-port\platform;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2-build\include-config-relwithdebinfo\SDL2;C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -281,16 +302,16 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>user32.lib;gdi32.lib;winmm.lib;_deps\sdl2-build\RelWithDebInfo\SDL2-static.lib;_deps\sdl2_mixer-build\RelWithDebInfo\SDL2_mixer.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Code/Doom/doom-port/build/RelWithDebInfo/doom-port.lib</ImportLibrary>
+      <ImportLibrary>C:/Code/DOOM/doom-port/build/RelWithDebInfo/doom-port.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Code/Doom/doom-port/build/RelWithDebInfo/doom-port.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Code/DOOM/doom-port/build/RelWithDebInfo/doom-port.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -299,11 +320,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Code\Doom\doom-port\CMakeLists.txt">
+    <CustomBuild Include="C:\Code\DOOM\doom-port\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Code/Doom/doom-port/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Code/DOOM/doom-port/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/Doom/doom-port -BC:/Code/Doom/doom-port/build --check-stamp-file C:/Code/Doom/doom-port/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port -BC:/Code/DOOM/doom-port/build --check-stamp-file C:/Code/DOOM/doom-port/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -311,12 +332,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Code/Doom/doom-port/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Code/DOOM/doom-port/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/Doom/doom-port -BC:/Code/Doom/doom-port/build --check-stamp-file C:/Code/Doom/doom-port/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port -BC:/Code/DOOM/doom-port/build --check-stamp-file C:/Code/DOOM/doom-port/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -324,12 +345,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Code/Doom/doom-port/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Code/DOOM/doom-port/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/Doom/doom-port -BC:/Code/Doom/doom-port/build --check-stamp-file C:/Code/Doom/doom-port/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port -BC:/Code/DOOM/doom-port/build --check-stamp-file C:/Code/DOOM/doom-port/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -337,12 +358,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Code/Doom/doom-port/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Code/DOOM/doom-port/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/Doom/doom-port -BC:/Code/Doom/doom-port/build --check-stamp-file C:/Code/Doom/doom-port/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port -BC:/Code/DOOM/doom-port/build --check-stamp-file C:/Code/DOOM/doom-port/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -350,87 +371,97 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\Doom\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Code\Doom\doom-port\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeCXXCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeRCCompiler.cmake;C:\Code\DOOM\doom-port\build\CMakeFiles\4.1.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Code\DOOM\doom-port\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\am_map.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\d_items.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\d_main.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\d_net.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\doomdef.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\doomstat.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\dstrings.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\f_finale.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\f_wipe.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\g_game.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\hu_lib.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\hu_stuff.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_main.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_net.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_sound.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_system.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_video.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\info.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_argv.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_bbox.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_cheat.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_fixed.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_menu.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_misc.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_random.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_swap.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_ceilng.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_doors.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_enemy.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_floor.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_inter.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_lights.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_map.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_maputl.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_mobj.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_plats.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_pspr.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_saveg.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_setup.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_sight.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_spec.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_switch.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_telept.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_tick.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_user.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_bsp.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_data.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_draw.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_main.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_plane.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_segs.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_sky.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_things.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\s_sound.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\sounds.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\st_lib.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\st_stuff.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\tables.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\v_video.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\w_wad.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\wi_stuff.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\src\z_zone.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\platform\windows\timer_win32.c" />
-    <ClCompile Include="C:\Code\Doom\doom-port\platform\windows\window_win32.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\am_map.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\d_items.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\d_main.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\d_net.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\doomdef.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\doomstat.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\dstrings.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\f_finale.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\f_wipe.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\g_game.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\hu_lib.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\hu_stuff.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_main.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_net.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_sound.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_system.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_video.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\info.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_argv.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_bbox.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_cheat.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_fixed.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_menu.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_misc.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_random.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_swap.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_ceilng.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_doors.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_enemy.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_floor.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_inter.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_lights.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_map.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_maputl.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_mobj.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_plats.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_pspr.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_saveg.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_setup.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_sight.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_spec.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_switch.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_telept.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_tick.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_user.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_bsp.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_data.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_draw.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_main.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_plane.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_segs.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_sky.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_things.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\s_sound.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\sounds.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\st_lib.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\st_stuff.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\tables.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\v_video.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\w_wad.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\wi_stuff.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\z_zone.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\platform\windows\audio_sdl.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\platform\windows\timer_win32.c" />
+    <ClCompile Include="C:\Code\DOOM\doom-port\platform\windows\window_sdl.c" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Code\Doom\doom-port\build\ZERO_CHECK.vcxproj">
-      <Project>{23187C0E-1C9D-3CC3-8437-05DB9E2051A1}</Project>
+    <ProjectReference Include="C:\Code\DOOM\doom-port\build\ZERO_CHECK.vcxproj">
+      <Project>{8E38EFDF-8040-31D9-B5B5-A41C3570BACE}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-build\SDL2-static.vcxproj">
+      <Project>{FB06325C-7CEC-39C6-9AE2-016790F166E9}</Project>
+      <Name>SDL2-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\SDL2_mixer.vcxproj">
+      <Project>{8A06CFC3-E9EF-3A9B-BF7D-E96AA642302B}</Project>
+      <Name>SDL2_mixer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   </ImportGroup>
 </Project>

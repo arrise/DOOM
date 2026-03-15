@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Code\Doom\doom-port\build\CMakeFiles\d0ab02485240c71a21b1c73221f55f2a\generate.stamp.rule">
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\CMakeFiles\7611e9de4ecd1bb65318ec229be852d9\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{50FC8A7D-D177-3646-AE5B-D813EA6F8E79}</UniqueIdentifier>
+      <UniqueIdentifier>{7283CCD9-BE32-3238-AA86-91D61451D65A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

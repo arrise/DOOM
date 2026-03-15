@@ -1,6 +1,6 @@
 ^C:\CODE\DOOM\DOOM-PORT\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/Doom/doom-port -BC:/Code/Doom/doom-port/build --check-stamp-file C:/Code/Doom/doom-port/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port -BC:/Code/DOOM/doom-port/build --check-stamp-file C:/Code/DOOM/doom-port/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

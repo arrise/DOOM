@@ -1,0 +1,4 @@
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/opusfile/opusfile.dir/RelWithDebInfo/info.obj
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/opusfile/opusfile.dir/RelWithDebInfo/internal.obj
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/opusfile/opusfile.dir/RelWithDebInfo/opusfile.obj
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/opusfile/opusfile.dir/RelWithDebInfo/stream.obj

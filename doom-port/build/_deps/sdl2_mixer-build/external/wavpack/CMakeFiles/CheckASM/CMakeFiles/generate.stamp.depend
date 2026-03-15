@@ -1,0 +1,38 @@
+# CMake generation dependency list for this directory.
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/wavpack/CMakeFiles/CheckASM/CMakeFiles/4.1.0-rc3/CMakeASMCompiler.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/wavpack/CMakeFiles/CheckASM/CMakeFiles/4.1.0-rc3/CMakeRCCompiler.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/wavpack/CMakeFiles/CheckASM/CMakeFiles/4.1.0-rc3/CMakeSystem.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/wavpack/CMakeFiles/CheckASM/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeASMCompiler.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCompilerIdDetection.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeRCCompiler.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeSystem.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestASMCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeInspectASMLinker.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake

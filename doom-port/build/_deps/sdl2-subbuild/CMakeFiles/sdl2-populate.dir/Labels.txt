@@ -1,0 +1,14 @@
+# Target labels
+ sdl2-populate
+# Source files and their labels
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/feef6c15ed44705c2ac348bd4fc812a6/sdl2-populate.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/c435a5b73f4febb78de6adb52dd46fbb/sdl2-populate-complete.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-build.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-configure.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-download.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-install.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-mkdir.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-patch.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-test.rule
+C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/CMakeFiles/33bb7cc95b60f364cc59b7c8d42d6853/sdl2-populate-update.rule

@@ -26,14 +26,10 @@ static const char
 rcsid[] = "$Id: w_wad.c,v 1.5 1997/02/03 16:47:57 b1 Exp $";
 
 
-#ifdef NORMALUNIX
 #include <ctype.h>
 #include <sys/types.h>
 #include <string.h>
-#ifdef LINUX
-#include <unistd.h>
-#include <alloca.h>
-#endif
+
 #ifdef _WIN32
 #include <io.h>
 #include <fcntl.h>
@@ -49,7 +45,6 @@ rcsid[] = "$Id: w_wad.c,v 1.5 1997/02/03 16:47:57 b1 Exp $";
 #define close _close
 #endif
 #include <sys/stat.h>
-#endif
 
 #include "doomtype.h"
 #include "m_swap.h"

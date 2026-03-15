@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\external\wavpack\CMakeFiles\CheckASM\CMakeFiles\7b2385f82427dd27514bffe587d7c34c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1411C2AB-1F3C-38DC-BA28-7528C62BF6F7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

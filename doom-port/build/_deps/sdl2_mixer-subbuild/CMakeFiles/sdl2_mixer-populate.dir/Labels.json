@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/sdl2_mixer-populate"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/4bc5f323494ce9c5911231fd6e5b10f2/sdl2_mixer-populate.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/5ac0482754eb0a78e34677d4327e66b3/sdl2_mixer-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-build.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-download.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-install.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-test.rule"
+		},
+		{
+			"file" : "C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/CMakeFiles/77eb2ac05f2267e1e4e9fac41bd25d32/sdl2_mixer-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sdl2_mixer-populate"
+		],
+		"name" : "sdl2_mixer-populate"
+	}
+}

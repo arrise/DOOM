@@ -1,0 +1,17 @@
+# CMake generation dependency list for this directory.
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/ogg/CMakeLists.txt
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/ogg/cmake/CheckSizes.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/ogg/include/ogg/config_types.h.in
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/ogg/ogg.pc.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Templates/CPackConfig.cmake.in

@@ -31,9 +31,7 @@ rcsid[] = "$Id: m_misc.c,v 1.6 1997/02/03 22:45:10 b1 Exp $";
 #include <sys/types.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#ifdef LINUX
-#include <unistd.h>
-#endif
+
 #ifdef _WIN32
 #include <io.h>
 #include <fcntl.h>
@@ -220,10 +218,7 @@ extern char*	sndserver_filename;
 extern int	mb_used;
 #endif
 
-#ifdef LINUX
-char*		mousetype;
-char*		mousedev;
-#endif
+
 
 extern char*	chat_macros[];
 
@@ -246,7 +241,6 @@ default_t	defaults[] =
     {"show_messages",&showMessages, 1},
     
 
-#ifdef NORMALUNIX
     {"key_right",&key_right, KEY_RIGHTARROW},
     {"key_left",&key_left, KEY_LEFTARROW},
     {"key_up",&key_up, KEY_UPARROW},
@@ -259,18 +253,7 @@ default_t	defaults[] =
     {"key_strafe",&key_strafe, KEY_RALT},
     {"key_speed",&key_speed, KEY_RSHIFT},
 
-// UNIX hack, to be removed. 
-#ifdef SNDSERV
-    {"sndserver", (int *) &sndserver_filename, (int) "sndserver"},
-    {"mb_used", &mb_used, 2},
-#endif
-    
-#endif
 
-#ifdef LINUX
-    {"mousedev", (int*)&mousedev, (int)"/dev/ttyS0"},
-    {"mousetype", (int*)&mousetype, (int)"microsoft"},
-#endif
 
     {"use_mouse",&usemouse, 1},
     {"mouseb_fire",&mousebfire,0},

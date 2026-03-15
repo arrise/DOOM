@@ -1,0 +1,10 @@
+^C:\CODE\DOOM\DOOM-PORT\BUILD\_DEPS\SDL2_MIXER-SUBBUILD\CMAKEFILES\4BC5F323494CE9C5911231FD6E5B10F2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild -BC:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-subbuild/sdl2_mixer-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

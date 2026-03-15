@@ -1,0 +1,10 @@
+^C:\CODE\DOOM\DOOM-PORT\BUILD\_DEPS\SDL2-SUBBUILD\CMAKEFILES\FEEF6C15ED44705C2AC348BD4FC812A6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild -BC:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Code/DOOM/doom-port/build/_deps/sdl2-subbuild/sdl2-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

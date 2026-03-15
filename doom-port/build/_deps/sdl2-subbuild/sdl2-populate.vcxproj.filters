@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\33bb7cc95b60f364cc59b7c8d42d6853\sdl2-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\c435a5b73f4febb78de6adb52dd46fbb\sdl2-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\feef6c15ed44705c2ac348bd4fc812a6\sdl2-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Code\DOOM\doom-port\build\_deps\sdl2-subbuild\CMakeFiles\sdl2-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{19C78E97-C3C4-37FC-8DA3-E2AF08927D54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

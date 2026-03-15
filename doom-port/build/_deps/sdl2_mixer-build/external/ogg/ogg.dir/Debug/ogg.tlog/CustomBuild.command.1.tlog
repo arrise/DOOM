@@ -1,0 +1,10 @@
+^C:\CODE\DOOM\DOOM-PORT\BUILD\_DEPS\SDL2_MIXER-SRC\EXTERNAL\OGG\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Code/DOOM/doom-port -BC:/Code/DOOM/doom-port/build --check-stamp-file C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-build/external/ogg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -2,10 +2,34 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Code\Doom\doom-port\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Code\DOOM\doom-port\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Code\Doom\doom-port\build\Debug\doom-port.exe</FullPath>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2-build\x64\Debug\sdl_headers_copy</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2-build\Debug\SDL2d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\external\ogg\Debug\ogg-0.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\external\opus\Debug\opus-0.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\external\opusfile\Debug\opusfile-0.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\external\wavpack\Debug\libwavpack-1.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\external\libxmp\Debug\libxmp.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\_deps\sdl2_mixer-build\Debug\SDL2_mixerd.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Code\DOOM\doom-port\build\Debug\doom-port.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

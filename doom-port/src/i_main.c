@@ -35,14 +35,22 @@ rcsid[] = "$Id: i_main.c,v 1.4 1997/02/03 22:45:10 b1 Exp $";
 
 extern void Window_InstallCrashHandler(void);
 
+#define SDL_MAIN_HANDLED
+#include <SDL.h>
+
 int
 main
 ( int		argc,
   char**	argv ) 
 { 
+    SDL_SetMainReady();
 #ifdef _WIN32
     Window_InstallCrashHandler();
 #endif
+
+    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+        fprintf(stderr, "SDL_Init failed: %s\n", SDL_GetError());
+    }
 
     setvbuf(stdout, NULL, _IONBF, 0);
     myargc = argc; 

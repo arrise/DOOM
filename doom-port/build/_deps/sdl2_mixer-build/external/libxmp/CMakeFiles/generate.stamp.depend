@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/libxmp/CMakeLists.txt
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/libxmp/cmake/libxmp-checks.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/libxmp/cmake/libxmp-sources.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/libxmp/libxmp.pc.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake

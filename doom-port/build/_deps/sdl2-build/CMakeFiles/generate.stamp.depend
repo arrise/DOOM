@@ -1,0 +1,39 @@
+# CMake generation dependency list for this directory.
+C:/Code/DOOM/doom-port/build/_deps/sdl2-build/SDL_config.h.intermediate
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/CMakeLists.txt
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/SDL2.spec.in
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/cmake/macros.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/cmake/sdlchecks.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/cmake/sdlfind.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/cmake/sdlplatform.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/cmake_uninstall.cmake.in
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/include/SDL_config.h.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/include/SDL_revision.h.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/sdl2-config.in
+C:/Code/DOOM/doom-port/build/_deps/sdl2-src/sdl2.pc.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLanguage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake

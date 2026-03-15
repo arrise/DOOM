@@ -1,0 +1,39 @@
+# CMake generation dependency list for this directory.
+C:/Code/DOOM/doom-port/build/CMakeFiles/4.1.0-rc3/CMakeASMCompiler.cmake
+C:/Code/DOOM/doom-port/build/CMakeFiles/4.1.0-rc3/CMakeASM_MASMCompiler.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/wavpack/CMakeLists.txt
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/wavpack/cmake/CheckCLinkerFlag.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/wavpack/cmake/TestLargeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeASM_MASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLanguage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FeatureSummary.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindIconv.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeASM_MASMLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-ASM.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Templates/CPackConfig.cmake.in

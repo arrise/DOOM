@@ -11,7 +11,7 @@
 #include <time.h>
 #include "../platform/platform_timer.h"
 
-int mb_used = 16;
+int mb_used = 32;
 void I_Tactile(int on, int off, int total) {}
 
 ticcmd_t emptycmd;
@@ -30,6 +30,8 @@ int I_GetTime (void) {
 
 void I_Init (void) {
     Timer_Init();
+    I_InitMusic();
+    I_InitSound();
 }
 
 void I_Quit (void) {

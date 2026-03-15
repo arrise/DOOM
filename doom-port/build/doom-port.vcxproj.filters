@@ -1,205 +1,208 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\am_map.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\am_map.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\d_items.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\d_items.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\d_main.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\d_main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\d_net.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\d_net.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\doomdef.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\doomdef.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\doomstat.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\doomstat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\dstrings.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\dstrings.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\f_finale.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\f_finale.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\f_wipe.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\f_wipe.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\g_game.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\g_game.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\hu_lib.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\hu_lib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\hu_stuff.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\hu_stuff.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_main.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_net.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_net.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_sound.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_sound.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_system.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_system.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\i_video.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\i_video.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\info.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\info.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_argv.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_argv.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_bbox.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_bbox.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_cheat.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_cheat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_fixed.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_fixed.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_menu.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_menu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_misc.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_misc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_random.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_random.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\m_swap.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\m_swap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_ceilng.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_ceilng.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_doors.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_doors.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_enemy.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_enemy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_floor.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_floor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_inter.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_inter.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_lights.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_lights.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_map.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_map.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_maputl.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_maputl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_mobj.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_mobj.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_plats.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_plats.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_pspr.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_pspr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_saveg.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_saveg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_setup.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_setup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_sight.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_sight.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_spec.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_spec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_switch.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_switch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_telept.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_telept.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_tick.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_tick.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\p_user.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\p_user.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_bsp.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_bsp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_data.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_data.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_draw.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_draw.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_main.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_plane.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_plane.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_segs.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_segs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_sky.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_sky.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\r_things.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\r_things.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\s_sound.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\s_sound.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\sounds.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\sounds.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\st_lib.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\st_lib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\st_stuff.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\st_stuff.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\tables.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\tables.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\v_video.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\v_video.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\w_wad.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\w_wad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\wi_stuff.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\wi_stuff.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\src\z_zone.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\src\z_zone.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\platform\windows\timer_win32.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\platform\windows\audio_sdl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Code\Doom\doom-port\platform\windows\window_win32.c">
+    <ClCompile Include="C:\Code\DOOM\doom-port\platform\windows\timer_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Code\DOOM\doom-port\platform\windows\window_sdl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Code\Doom\doom-port\CMakeLists.txt" />
+    <CustomBuild Include="C:\Code\DOOM\doom-port\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4A865394-8F16-3E33-9828-A7CF18088ED8}</UniqueIdentifier>
+      <UniqueIdentifier>{CA47C4BA-250E-3029-B245-53BB0BBFA3CB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

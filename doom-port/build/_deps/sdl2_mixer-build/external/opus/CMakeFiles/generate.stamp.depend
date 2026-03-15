@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/CMakeLists.txt
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/CFeatureCheck.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/OpusBuildtype.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/OpusConfig.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/OpusConfig.cmake.in
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/OpusFunctions.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/OpusPackageVersion.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/OpusSources.cmake
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/cmake/config.h.cmake.in
+C:/Code/DOOM/doom-port/build/_deps/sdl2_mixer-src/external/opus/opus.pc.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FeatureSummary.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-4.1/Templates/CPackConfig.cmake.in
