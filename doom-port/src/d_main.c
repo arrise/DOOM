@@ -502,12 +502,18 @@ void D_AdvanceDemo (void)
 	}
 	else
 	{
-	    pagetic = 200;
-
 	    if ( gamemode == retail )
 	      pagename = "CREDIT";
-	    else
+	    else if (W_CheckNumForName("HELP2") != -1)
 	      pagename = "HELP2";
+	    else if (W_CheckNumForName("HELP1") != -1)
+	      pagename = "HELP1";
+	    else
+	    {
+		D_DoAdvanceDemo ();
+		return;
+	    }
+	    pagetic = 200;
 	}
 	break;
       case 5:

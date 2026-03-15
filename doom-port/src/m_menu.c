@@ -789,7 +789,10 @@ void M_DrawReadThis2(void)
 	break;
       case shareware:
       case registered:
-	V_DrawPatchDirect (0,0,0,W_CacheLumpName("HELP2",PU_CACHE));
+	if (W_CheckNumForName("HELP2") != -1)
+	  V_DrawPatchDirect (0,0,0,W_CacheLumpName("HELP2",PU_CACHE));
+	else
+	  V_DrawPatchDirect (0,0,0,W_CacheLumpName("HELP1",PU_CACHE));
 	break;
       default:
 	break;
